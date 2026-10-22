@@ -3,13 +3,13 @@ class Solution:
         common_prefix = ""
 
         for index in range(len(strs[0])):
-            prefices = [
+            prefixes = [
                 string[:index + 1] 
                 for string in strs
             ]
 
-            if len(set(prefices)) == 1:
-                common_prefix = prefices[0]
+            if len(set(prefixes)) == 1:
+                common_prefix = prefixes[0]
             else:
                 break
 
